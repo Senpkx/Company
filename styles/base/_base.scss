@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "CoFo";
+  src: url("../fonts/CoFo-Sans.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Mabry-Pro";
+  src: url("../fonts/MabryPro.woff2") format("woff2");
+}
+
+body {
+  font-family: "CoFo sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  appearance: none;
+  padding: 0 !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  width: 1600px;
+  margin: 0 auto;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  @include tablet {
+    width: 648px;
+    padding: 0 20px 0 20px;
+  }
+  @include mobile {
+    width: 338px;
+    padding: 0 10px 0 10px;
+  }
+}
+.body-no-scroll {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: $dark;
+  -webkit-overflow-scrolling: touch;
+  -ms-scroll-chaining: none;
+  overscroll-behavior: contain;
+}
+
+h1 {
+  font-family: "Mabry-Pro sans", sans-serif;
+  font-size: 67px;
+  font-weight: 500;
+  line-height: 0.9;
+}
+h2 {
+  font-family: "Mabry-Pro sans", sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.none {
+  display: none !important;
+}
+a {
+  color: $dark;
+  cursor: pointer;
+}
+button {
+  font-size: 20px;
+}
+
+.is_hidden {
+  //for burger btn
+  overflow: hidden;
+  opacity: 0;
+  visibility: 0;
+  pointer-events: none;
+  max-height: 0;
+  max-width: 0;
+}

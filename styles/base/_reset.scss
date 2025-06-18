@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  //for ios
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}

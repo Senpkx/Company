@@ -1,0 +1,16 @@
+.swiper-pagination {
+  position: absolute;
+  bottom: 30px !important;
+  &-bullet {
+    background-color: $purple !important;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    height: 5px !important;
+    border-radius: 100px !important;
+
+    &-active {
+      width: 23px !important;
+    }
+  }
+}

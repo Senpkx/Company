@@ -1,0 +1,13 @@
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/mixins";
+@import "./base/base";
+
+@import "./blocks/header/header";
+@import "./blocks/header/mobile";
+@import "./blocks/header/burger.scss";
+@import "./blocks/section/section";
+@import "./blocks/footer/footer";
+@import "./blocks/footer/swiper";
+@import "./blocks/footer/custom-buttons";
+@import "./blocks/footer/pagination";

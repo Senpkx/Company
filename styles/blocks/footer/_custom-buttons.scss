@@ -1,0 +1,29 @@
+.cuntom-button-prev,
+.cuntom-button-next {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  z-index: 2;
+  > img {
+    background-color: $white;
+    border-radius: 24px;
+    padding: 18px 18px 18px 16px;
+    width: 14px;
+    height: 12px;
+  }
+}
+.cuntom-button-next {
+  right: 0;
+}
+
+.cuntom-button-prev {
+  left: 16px;
+  @include mobile {
+    left: 0;
+  }
+}
