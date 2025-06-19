@@ -1,14 +1,14 @@
 .footer {
-  display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
-  gap: 126px;
-  margin: 120px auto 115px auto;
+  display: flex;
+  justify-content: space-between;
+  margin: 124px auto 115px auto;
   @include tablet {
-    display: block;
+    flex-direction: column;
   }
   @include mobile {
-    margin: 50px 19px 33px 15px;
+    margin: 50px auto 33px auto;
   }
 }
 .footer_left {

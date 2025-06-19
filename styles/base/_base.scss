@@ -19,17 +19,19 @@ body {
 }
 
 .container {
-  width: 1600px;
+  width: 1680px;
   margin: 0 auto;
+  padding: 0 40px;
   position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   @include tablet {
-    width: 648px;
-    padding: 0 20px 0 20px;
+    width: 728px;
+    padding: 0 20px;
   }
   @include mobile {
     width: 338px;
+    margin: 0 auto;
     padding: 0;
   }
 }

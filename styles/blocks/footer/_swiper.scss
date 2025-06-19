@@ -1,50 +1,50 @@
 .swiper-container {
   position: relative;
   overflow: hidden;
-  width: 1004px;
-  height: 420px;
+  width: 1084px;
+  height: 530px;
+  box-sizing: border-box;
 
   //   for shadow;
-  padding: 75px 24px 75px 40px;
-  margin: -75px -24px -75px -40px;
-
-  @include mobile {
-    padding: 75px 18px 75px 18px;
-    margin: -75px -18px -75px -18px;
-  }
+  padding: 40px;
+  margin: -40px;
 
   @include tablet {
-    width: 604px;
-    height: 420px;
+    width: 100%;
+    height: 540px;
+    margin: auto;
+    padding: 20px;
   }
   @include mobile {
-    width: 327px;
+    width: 335px;
     height: 460px;
+    margin: auto;
+    -webkit-box-shadow: 0 10px 40px 0 rgba(79, 61, 161, 0.4);
+    box-shadow: 0 10px 40px 0 rgba(79, 61, 161, 0.4);
+    padding: 0;
+    border-radius: 20px;
   }
 }
 .swiper-wrapper {
   display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
 }
 .swiper-slide-prev {
   opacity: 0 !important;
 }
 .swiper-slide {
-  height: 420px;
+  height: 420px !important;
   border-radius: 20px;
-  overflow: hidden;
   flex-shrink: 0;
-  box-shadow: 0 10px 30px 0 rgba(55, 48, 66, 0.2);
   -webkit-box-shadow: 0 10px 30px 0 rgba(55, 48, 66, 0.2);
   -webkit-transition: height 0.3s ease, opacity 0.3s ease !important;
   -o-transition: height 0.3s ease, opacity 0.3s ease !important;
+  box-shadow: 0 10px 30px 0 rgba(55, 48, 66, 0.2);
   transition: height 0.3s ease, opacity 0.3s ease !important;
 
   &:hover {
-    height: 450px;
-    box-shadow: 0 10px 40px 0 rgba(79, 61, 161, 0.4);
+    height: 450px !important;
     -webkit-box-shadow: 0 10px 40px 0 rgba(79, 61, 161, 0.4);
+    box-shadow: 0 10px 40px 0 rgba(79, 61, 161, 0.4);
 
     .swiper-slide_footer {
       opacity: 1;
@@ -54,17 +54,16 @@
   }
 
   @include tablet {
-    width: 300px;
+    height: 450px !important;
+    -webkit-box-shadow: 0 10px 40px 0 rgba(79, 61, 161, 0.4);
+    box-shadow: 0 10px 40px 0 rgba(79, 61, 161, 0.4);
     > img {
       width: 100%;
     }
   }
 
   @include mobile {
-    width: 335px;
-    > img {
-      width: 100%;
-    }
+    height: 100% !important;
   }
 }
 .swiper-slide-prev {
@@ -73,16 +72,21 @@
 }
 
 .slide-info {
-  display: inline-flex;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
+  display: inline-flex;
 
-  flex-direction: column;
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   -ms-flex-direction: column;
+  flex-direction: column;
+
   margin: 25px 38px 23px 30px;
   gap: 8px;
+
+  @include mobile {
+    margin: 14px 38px 23px 30px;
+  }
 }
 .swiper-slide_title {
   font-size: 17px;
@@ -93,9 +97,9 @@
 .swiper-slide_headlines {
   font-size: 24px;
   font-weight: 500;
-  white-space: nowrap;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
+  white-space: nowrap;
   overflow: hidden;
 }
 .swiper-slide_tel {
@@ -104,19 +108,19 @@
   font-weight: 400;
 }
 .swiper-slide_footer {
-  display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
   gap: 10px;
-  align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
+  align-items: center;
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s ease;
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
   > p {
     font-weight: 500;
     color: $purple;
@@ -124,6 +128,11 @@
   > img {
     width: 20px;
     height: 12px;
+  }
+  @include tablet {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
   }
   @include mobile {
     opacity: 1;

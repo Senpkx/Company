@@ -3,6 +3,7 @@ new Swiper(".swiper-container", {
   slidesPerView: 1,
   slidesPerGroup: 1,
   freeMode: true,
+  // direction: "horizontal",
 
   breakpoints: {
     376: {

@@ -1,6 +1,9 @@
 .swiper-pagination {
   position: absolute;
-  bottom: 30px !important;
+  bottom: -12px !important;
+  left: -26.5% !important;
+  text-align: end !important
+  ;
   &-bullet {
     background-color: $purple !important;
     transition: all 0.3s ease;
@@ -12,5 +15,12 @@
     &-active {
       width: 23px !important;
     }
+  }
+  @include tablet {
+    text-align: center !important;
+    left: 0 !important;
+  }
+  @include mobile {
+    bottom: -39px !important;
   }
 }

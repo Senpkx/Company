@@ -4,10 +4,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 47%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   z-index: 2;
   > img {
     background-color: $white;
@@ -16,14 +16,29 @@
     width: 14px;
     height: 12px;
   }
+  @include tablet {
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-40%);
+  }
+  @include mobile {
+    top: 49%;
+    > img {
+      padding: 14px 14px 14px 12px;
+    }
+  }
 }
 .cuntom-button-next {
-  right: 0;
+  right: 16px;
+  @include tablet {
+    right: 0;
+  }
 }
 
 .cuntom-button-prev {
   left: 16px;
-  @include mobile {
+  @include tablet {
     left: 0;
   }
 }
