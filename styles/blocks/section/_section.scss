@@ -112,23 +112,24 @@ main {
     }
   }
   @include mobile {
-    top: 120px;
+    top: 114px;
 
     > h1 {
-      font-size: 45px;
+      font-size: 43px;
       margin-bottom: 20px;
     }
 
     > p:first-of-type {
-      font-size: 24px;
-      margin-bottom: 15px;
+      font-size: 23px;
+      margin-bottom: 22px;
     }
     > p:last-of-type {
-      font-size: 18px;
+      font-size: 16px;
       margin-bottom: 25px;
     }
     > button {
       padding: 16px 67px;
+      font-size: 16px;
     }
   }
 }
@@ -156,7 +157,7 @@ main {
     padding: 5px 15px 5px 0;
   }
   @include mobile {
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: 25px;
   }
 }

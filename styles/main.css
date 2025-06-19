@@ -45,7 +45,7 @@ body {
 @media screen and (max-width: 375px) {
   .container {
     width: 338px;
-    padding: 0 10px 0 10px;
+    padding: 0;
   }
 }
 
@@ -106,7 +106,12 @@ button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 20px 0 15px 0;
+  margin: 29px 0 29px 0;
+}
+@media screen and (max-width: 375px) {
+  .header {
+    margin: 20px 0 15px 0;
+  }
 }
 
 .logo {
@@ -115,8 +120,14 @@ button {
   display: flex;
 }
 .logo > img {
-  width: 180px;
-  height: 53px;
+  width: 205px;
+  height: 60px;
+}
+@media screen and (max-width: 768px) {
+  .logo > img {
+    width: 180px;
+    height: 53px;
+  }
 }
 
 .header_main {
@@ -515,22 +526,23 @@ main {
 }
 @media screen and (max-width: 375px) {
   .main {
-    top: 120px;
+    top: 114px;
   }
   .main > h1 {
-    font-size: 45px;
+    font-size: 43px;
     margin-bottom: 20px;
   }
   .main > p:first-of-type {
-    font-size: 24px;
-    margin-bottom: 15px;
+    font-size: 23px;
+    margin-bottom: 22px;
   }
   .main > p:last-of-type {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 25px;
   }
   .main > button {
     padding: 16px 67px;
+    font-size: 16px;
   }
 }
 
@@ -559,7 +571,7 @@ main {
 }
 @media screen and (max-width: 375px) {
   .cap {
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: 25px;
   }
 }
@@ -627,11 +639,16 @@ main {
     margin-bottom: 60px;
   }
   .footer_left > h2 {
-    font-size: 40px;
+    font-size: 36px;
+    margin-bottom: 20px;
   }
   .footer_left > p {
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+  }
+  .footer_left > button {
+    font-size: 15px;
   }
 }
 

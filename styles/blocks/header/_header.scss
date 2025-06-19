@@ -10,7 +10,11 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 20px 0 15px 0;
+  margin: 29px 0 29px 0;
+
+  @include mobile {
+    margin: 20px 0 15px 0;
+  }
 }
 
 .logo {
@@ -19,8 +23,14 @@
   display: flex;
 
   > img {
-    width: 180px;
-    height: 53px;
+    width: 205px;
+    height: 60px;
+  }
+  @include tablet {
+    > img {
+      width: 180px;
+      height: 53px;
+    }
   }
 }
 

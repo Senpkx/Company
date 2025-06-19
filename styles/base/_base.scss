@@ -30,7 +30,7 @@ body {
   }
   @include mobile {
     width: 338px;
-    padding: 0 10px 0 10px;
+    padding: 0;
   }
 }
 .body-no-scroll {
